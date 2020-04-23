@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iOS 디자인 패턴 모음"
-date: 2020-04-23 17:37:22
+date: 2020-04-23 17:37:22 +0530
 categories: swift
 ---
 
