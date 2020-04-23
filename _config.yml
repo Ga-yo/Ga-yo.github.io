@@ -1,4 +1,4 @@
-title: Your awesome title
+title: Ga-yo.github.io
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -20,9 +20,9 @@ plainwhite:
 
   # generate social links in footer
   social_links:
-    twitter: ""
-    github:  "https://github.com/Ga-yo"
-    linkedIn: ""
+    twitter:
+    github:  https://github.com/Ga-yo
+    linkedIn:
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
@@ -51,6 +51,7 @@ plainwhite:
 
 # Build settings
 theme: plainwhite
+remote_theme: thelehhman/plainwhite-jekyll
 
 plugins:
   - jekyll-seo-tag
