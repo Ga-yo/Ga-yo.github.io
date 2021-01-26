@@ -1,1 +1,0 @@
-# Ga-yo.github.io
