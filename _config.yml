@@ -204,7 +204,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: article
+      layout: Articles - Item
       sharing: true
       license: true
       aside:
