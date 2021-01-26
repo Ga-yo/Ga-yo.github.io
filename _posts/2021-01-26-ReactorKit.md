@@ -3,6 +3,10 @@ title: "ReacotrKit 예제 따라하면서 뿌시기!"
 date: 2021-01-26 19:26:28 -0400
 categories: ReactorKit 
 ---
+toc: true
+toc_label: "In Post"
+toc_icon: "cog"
+---
 
 ![image](https://user-images.githubusercontent.com/49550838/105825875-6c1de900-6003-11eb-9826-158cbfd7b82c.png)
 
