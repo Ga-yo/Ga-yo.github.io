@@ -53,7 +53,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: Ga-yo/Ga-yo.github.io
 repository_tree: master
 
 
@@ -76,7 +76,7 @@ license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4
 
 ## TOC
 toc:
-  selectors: # "h1,h2,h3" (default)
+  selectors: "h1,h2,h3"
 
 
 ## => Markdown Enhancements
@@ -204,9 +204,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: Articles - Item
+      layout: article
       sharing: true
-      license: true
+      license: false
       aside:
         toc: true
       show_edit_on_github: true
