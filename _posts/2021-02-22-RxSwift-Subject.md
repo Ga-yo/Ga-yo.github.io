@@ -33,7 +33,7 @@ Observable을 상속하고 있으며 ObserverType 프로토콜을 채택하고 �
 
 1. AysncSubject
 
-   ![스크린샷 2021-02-21 오후 11.43.48](/Users/igayeong/Library/Application Support/typora-user-images/스크린샷 2021-02-21 오후 11.43.48.png)
+   <img width="520" alt="image" src="https://user-images.githubusercontent.com/49550838/108673391-eb310f00-7526-11eb-80a6-6d36bf7ceff7.png">
 
    마블 다이어그램을 보게되면 Observable로부터 배출된 마지막 값을 배출하고 소스 Observable의 동작이 완료된 후에야 동작합니다. 첫번째 subscribe 라인에서 맨마지막 값을 배출하게 되면 파란색 이벤트입니다. 그리고 두번째 subscribe 라인에서 맨마지막 값 역시 파란색 이벤트이므로 위의 사진과 같이 배출하게됩니다. 
 
@@ -41,7 +41,7 @@ Observable을 상속하고 있으며 ObserverType 프로토콜을 채택하고 �
 
 2. BehaviorSubject
 
-   ![스크린샷 2021-02-21 오후 11.49.16](/Users/igayeong/Library/Application Support/typora-user-images/스크린샷 2021-02-21 오후 11.49.16.png)
+   <img width="521" alt="image" src="https://user-images.githubusercontent.com/49550838/108673421-f84dfe00-7526-11eb-9277-bd8fe97628dc.png">
 
    BehaviorSubject는 구독하기 시작하면 초기값을 가진 형태의 subject라고 볼 수 있습니다. 가장 최근에 발행한 항목의 발행을 시작하며 그 이후의 이벤트들에 의해 발행된 항목들을 계속 발행합니다. 
 
@@ -49,7 +49,7 @@ Observable을 상속하고 있으며 ObserverType 프로토콜을 채택하고 �
 
 3. PublishSubject
 
-   ![스크린샷 2021-02-21 오후 11.56.44](/Users/igayeong/Library/Application Support/typora-user-images/스크린샷 2021-02-21 오후 11.56.44.png)
+   <img width="521" alt="image" src="https://user-images.githubusercontent.com/49550838/108673439-026ffc80-7527-11eb-8cb6-b5fca1f9e898.png">
 
    마블 다이어그램에서 보면 구독 이후에 Observable이 배출한 이벤트들만 Observer에게 배출하는 형태를 볼 수 있습니다. PublishSubject 사용 시 주의할 점은 subject가 생성되는 시점과 Observer가 이 subject를 구독하기 시작하는 시점 그 사이에 배출되는 항목들은 잃어버릴 수 있습니다. 그때를 대비해 모든 Observer가 구독을 시작했는지 체크하는 cold observable들을 생성하거나 ReplaySubject를 사용하면 해결할 수 있습니다.
 
@@ -57,7 +57,7 @@ Observable을 상속하고 있으며 ObserverType 프로토콜을 채택하고 �
 
 4. ReplaySubject
 
-   ![스크린샷 2021-02-22 오전 12.00.20](/Users/igayeong/Library/Application Support/typora-user-images/스크린샷 2021-02-22 오전 12.00.20.png)
+   <img width="521" alt="image" src="https://user-images.githubusercontent.com/49550838/108673455-0d2a9180-7527-11eb-90ad-7fd5a386088b.png">
 
    Observer가 구독을 시작한 시점과 관계없이 Observable들이 배출한 모든 항목들을 모든 Observer에게 배출합니다. 확실히 여태까지 봐온 다이어그램과의 차이가 있는 걸 느끼죠? 늦게 구독을 시작해도 전에 배출된 이벤트들도 배출됩니다. 
 
